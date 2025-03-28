@@ -1,0 +1,80 @@
+[
+  {
+    "title": "The Future of Computer Science and Engineering",
+    "thumbnail": "https://i.ibb.co.com/BKfvbLhq/01.jpg",
+    "description": "Technological advancements are reshaping the field of Computer Science and Engineering...",
+    "details": "Artificial Intelligence, Quantum Computing, and Blockchain are key innovations driving the future...",
+    "author": "John Doe",
+    "published_date": "2025-03-04",
+    "img": [
+      "https://i.ibb.co/6cVfnjBX/01.jpg",
+      "https://i.ibb.co/hJXjbqZ0/02.jpg",
+      "https://i.ibb.co/VW9GTnnd/single.jpg"
+    ]
+  },
+  {
+    "title": "What You Need to Know Before Pursuing CSE",
+    "thumbnail": "https://i.ibb.co.com/SXZscxR6/03.jpg",
+    "description": "Before stepping into the world of Computer Science, it's crucial to understand its fundamentals...",
+    "details": "Programming, Data Structures, and Algorithms form the core foundation of a CSE career...",
+    "author": "Jane Smith",
+    "published_date": "2025-03-02",
+    "img": [
+      "https://i.ibb.co/hJXjbqZ0/02.jpg",
+      "https://i.ibb.co/6cVfnjBX/01.jpg",
+      "https://i.ibb.co/VW9GTnnd/single.jpg"
+    ]
+  },
+  {
+    "title": "How CSE is Changing the World",
+    "thumbnail": "https://i.ibb.co.com/N23Ndfvp/02.jpg",
+    "description": "Computer Science is revolutionizing industries from healthcare to finance...",
+    "details": "With the advent of AI and automation, businesses are becoming more efficient...",
+    "author": "David Brown",
+    "published_date": "2025-02-28",
+    "img": [
+      "https://i.ibb.co/VW9GTnnd/single.jpg",
+      "https://i.ibb.co/6cVfnjBX/01.jpg",
+      "https://i.ibb.co/hJXjbqZ0/02.jpg"
+    ]
+  },
+  {
+    "title": "Why Choose Computer Science as a Career?",
+    "thumbnail": "https://i.ibb.co.com/zhxg7M51/download-3.jpg",
+    "description": "A career in Computer Science offers high salaries and global opportunities...",
+    "details": "With demand for skilled professionals increasing, now is the best time to start...",
+    "author": "Emily White",
+    "published_date": "2025-02-25",
+    "img": [
+      "https://i.ibb.co/hJXjbqZ0/02.jpg",
+      "https://i.ibb.co/VW9GTnnd/single.jpg",
+      "https://i.ibb.co/6cVfnjBX/01.jpg"
+    ]
+  },
+  {
+    "title": "The Role of AI in Modern Technology",
+    "thumbnail": "https://i.ibb.co.com/bjncZ9KQ/Tapa-Four-university-friends-studying-together.jpg",
+    "description": "AI is transforming industries with machine learning and automation...",
+    "details": "From self-driving cars to virtual assistants, AI is becoming a necessity...",
+    "author": "Michael Green",
+    "published_date": "2025-02-20",
+    "img": [
+      "https://i.ibb.co/6cVfnjBX/01.jpg",
+      "https://i.ibb.co/hJXjbqZ0/02.jpg",
+      "https://i.ibb.co/VW9GTnnd/single.jpg"
+    ]
+  },
+  {
+    "title": "Cybersecurity Trends and Challenges",
+    "thumbnail": "https://i.ibb.co.com/HTk5RgtD/image.jpg",
+    "description": "Cyber threats are on the rise, making cybersecurity a top priority...",
+    "details": "Organizations are investing in advanced security measures to protect data...",
+    "author": "Sophia Black",
+    "published_date": "2025-02-15",
+    "img": [
+      "https://i.ibb.co/VW9GTnnd/single.jpg",
+      "https://i.ibb.co/hJXjbqZ0/02.jpg",
+      "https://i.ibb.co/6cVfnjBX/01.jpg"
+    ]
+  }
+]
