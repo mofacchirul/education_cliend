@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiossecure= axios.create({
-    baseURL:'https://education-server-gilt.vercel.app'
+    baseURL:'http://localhost:5000'
 })
 const Publicaxios = () => {
     return axiossecure

@@ -1,3 +1,4 @@
+
 import React from "react";
 // import backgroundImage from "../../assets/Educations/slider-3.jpg"; // Ensure this image is in your project folder
 
@@ -10,8 +11,9 @@ const stats = [
 
 const EducationStats = () => {
   return (
-   <div
-  className="hero min-h-screen bg-fixed"
+  <div className="">
+     <div
+  className="hero  min-h-screen bg-fixed"
   style={{
     backgroundImage: "url(https://i.ibb.co.com/rKsWmFzj/slider-3.jpg)",
   }}>
@@ -29,6 +31,7 @@ const EducationStats = () => {
         ))}
       </div>
 </div>
+  </div>
   );
 };
 

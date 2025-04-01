@@ -45,9 +45,9 @@ const Abouts = () => {
             </div>
 
             <About></About>
-            <EducationStats></EducationStats>
+            {/* <EducationStats></EducationStats>
           <TeamGrid></TeamGrid>
-            <Education_logo></Education_logo>
+            <Education_logo></Education_logo> */}
         </div>
     );
 };

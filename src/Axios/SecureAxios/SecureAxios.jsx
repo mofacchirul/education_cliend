@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 // Create Secure Axios Instance
 const secureAxios = axios.create({
-    baseURL: "https://education-server-gilt.vercel.app",
+    baseURL: "http://localhost:5000",
     withCredentials: true,
 });
 

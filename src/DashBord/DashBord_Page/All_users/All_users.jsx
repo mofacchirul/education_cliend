@@ -3,6 +3,7 @@ import SecureAxios from '../../../Axios/SecureAxios/SecureAxios';
 import { useQuery } from 'react-query';
 import { IoIosContacts } from "react-icons/io";
 import Swal from 'sweetalert2';
+import Loading from '../../../Loding';
 
 const All_users = () => {
     const axios = SecureAxios();
@@ -16,11 +17,7 @@ const All_users = () => {
     });
 
     if (isLoading) {
-        return (
-            <div className='flex justify-center items-center'>
-                <progress className="progress w-60"></progress>
-            </div>
-        );
+        return <Loading></Loading>
     }
 
     const HandleDelet=(id)=>{

@@ -33,7 +33,7 @@ const Google = () => {
     return (
         <div>
             <div className='py-3'>
-                <button onClick={HandleGoole} className="btn rounded-tl-4xl rounded-br-4xl btn-block text-xl bg-white">
+                <button onClick={HandleGoole} className="btn rounded-tl-4xl rounded-br-4xl btn-block text-xl ">
                     <img className='h-10' src='https://i.ibb.co.com/VcjpRTPz/icons8-google-100.png' alt="" /> Google
                 </button>
             </div>

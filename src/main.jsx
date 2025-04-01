@@ -32,6 +32,7 @@ import Admin_blog from './DashBord/DashBord_Page/Admin_blog/Admin_blog';
 import Manage_Applications from './DashBord/DashBord_Page/Manage_Applications/Manage_Applications';
 import Announcements from './DashBord/DashBord_Page/Announcements/Announcements';
 import AdminAnnouncementForm from './DashBord/DashBord_Page/AdminAnnouncementForm/AdminAnnouncementForm';
+import PrivateRuter from './Proter/PrivateRuter/PrivateRuter';
 
 
 // Create a client
@@ -49,20 +50,26 @@ const router = createBrowserRouter([
         element:<Home></Home>
       },
       {
-        path:'courses_detels/:id',
-        element:<Courses_detels></Courses_detels>,
-        loader:({params})=> fetch(`https://education-server-gilt.vercel.app/courses/${params.id}`)
+        path:'courses_details/:id',
+        element:<PrivateRuter>
+          <Courses_detels></Courses_detels>
+        </PrivateRuter>,
+        loader:({params})=> fetch(`http://localhost:5000/courses/${params.id}`)
       },
       {
         path:'join_event/:id',
-        element:<Joinevent></Joinevent>,
-        loader:({params})=>fetch(`https://education-server-gilt.vercel.app/events/${params.id}`)
+        element:<PrivateRuter>
+          <Joinevent></Joinevent>
+        </PrivateRuter>,
+        loader:({params})=>fetch(`http://localhost:5000/events/${params.id}`)
        
       },
       {
         path:'blog_detels/:id',
-        element:<Blog_detels></Blog_detels>,
-        loader:({params})=>fetch(`https://education-server-gilt.vercel.app/blog/${params.id}`)
+        element:  <PrivateRuter>
+          <Blog_detels></Blog_detels>
+        </PrivateRuter>,
+        loader:({params})=>fetch(`http://localhost:5000/blog/${params.id}`)
       },
       {
         path:'course',
@@ -82,7 +89,9 @@ const router = createBrowserRouter([
       },
       {
         path:'applycation_from',
-        element:<StudentApplicationForm></StudentApplicationForm>
+        element:<PrivateRuter>
+          <StudentApplicationForm></StudentApplicationForm>
+        </PrivateRuter>
       },
       {
         path:'blog_page',
@@ -96,7 +105,9 @@ const router = createBrowserRouter([
       },
       {
         path:'my_applications',
-        element:<My_applicatons></My_applicatons>
+        element:<PrivateRuter>
+          <My_applicatons></My_applicatons>
+        </PrivateRuter>,
       },{
         path:'login',
         element:<Login></Login>

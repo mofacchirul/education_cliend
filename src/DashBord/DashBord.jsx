@@ -2,16 +2,21 @@
 import { useContext } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Auth/Provider/Auth";
+import Footer from "../Componet/Footer/Footer";
+import Loading from "../Loding";
 
 
 const Dashbord = () => {
   const navigate = useNavigate();
-  const {signOutUser}=useContext(AuthContext)  
+  const {signOutUser,loding}=useContext(AuthContext)  
   const HandlesingOut=()=>{
     signOutUser()
     .then(()=>{
       navigate('/')
     })
+  }
+  if(loding){
+    return <Loading></Loading>
   }
  
   const links= 
@@ -76,8 +81,8 @@ const Dashbord = () => {
 </div>
   
   return (
-    <div className="sticky top-0 z-50 backdrop-blur-sm bg-white/90 shadow-md">
-    <div className="navbar sticky top-0 z-50 backdrop-blur-sm bg-white/90 shadow-md">
+    <div className=" bg-base-100">
+    <div className="navbar sticky top-0 z-50 backdrop-blur-sm  shadow-md">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -130,6 +135,7 @@ const Dashbord = () => {
     </div>
 
     <Outlet></Outlet>
+    <Footer></Footer>
   </div>
   );
 };

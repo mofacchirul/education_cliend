@@ -41,19 +41,19 @@ const AdminAnnouncementForm = () => {
   };
 
   return (
-    <div className="max-w-lg py-10 mx-auto bg-white p-6 shadow-md rounded-md">
-      <h2 className="text-xl font-bold  mb-4">Post New Announcement</h2>
+    <div className="max-w-lg py-10 mx-auto p-6 shadow-md rounded-md">
+      <h2 className="text-xl font-bold text-teal-900  mb-4">Post New Announcement</h2>
       <form onSubmit={handleSubmit}>
-        <label className="block font-semibold">Title</label>
+        <label className="block text-yellow-500 font-semibold">Title</label>
         <input name="title" value={announcement.title} onChange={handleChange} placeholder="Enter title"             className="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg" required />
         
-        <label className="block font-semibold">Category</label>
+        <label className="block text-yellow-500 font-semibold">Category</label>
         <input name="category" value={announcement.category} onChange={handleChange} placeholder="Enter category"             className="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg" required />
         
-        <label className="block font-semibold">Description</label>
+        <label className="block text-yellow-500 font-semibold">Description</label>
         <textarea name="description" value={announcement.description} onChange={handleChange} placeholder="Enter description"             className="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg" required />
         
-        <label className="block font-semibold">Date</label>
+        <label className="block text-yellow-500 font-semibold">Date</label>
         <input type="date" name="date" value={announcement.date} onChange={handleChange}             className="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg" required />
         
         <button type="submit" className="bg-yellow-500 btn btn-block mt-2 text-white px-4 py-2 rounded-md">Post Announcement</button>

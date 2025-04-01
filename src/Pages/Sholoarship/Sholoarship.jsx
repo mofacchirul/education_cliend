@@ -38,27 +38,29 @@ const Scholarship = () => {
   ];
 
   return (
-    <div className="container mx-auto py-10">
+    <div className=" max-w-xl lg:max-w-6xl   mx-auto py-10">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-yellow-500 mx-auto lg:text-3xl font-bold border-b-2 border-yellow-500 flex items-center gap-2 w-28 lg:w-48 justify-center">
-          <MdOutlineCastForEducation /> Features
-        </h1>
-        <h1 className="text-2xl lg:text-4xl font-extrabold">
-          Our Awesome <span className="text-yellow-500">Features</span>
-        </h1>
-        <p className="text-gray-600">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-        </p>
-      </div>
+  <h1 className="text-yellow-500 text-center mx-auto lg:text-3xl font-bold border-b-2 border-yellow-500 flex items-center gap-2 justify-center w-full max-w-xs lg:max-w-sm">
+    <MdOutlineCastForEducation /> Features
+  </h1>
+  <h1 className="text-2xl lg:text-4xl font-extrabold">
+    Our Awesome <span className="text-yellow-500">Features</span>
+  </h1>
+  <p className="text-white">
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+  </p>
+</div>
+
+
 
       {/* Features Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-6 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 py-6 gap-6">
         {scholarshipData.map((item) => (
-          <div key={item.id} className="bg-white rounded-t-3xl rounded-bl-xl shadow-md  p-6 text-center">
+          <div key={item.id} className="text-white border w-96 md:w-[500px] mx-auto lg:w-full rounded-t-3xl rounded-bl-xl shadow-md  p-6 text-center">
             <img src={item.img} alt={item.title} className="w-20 h-20 lg:w-32 lg:h-32 rounded-full  mx-auto mb-4  p-3 bg-teal-950" />
-            <h2 className="text-xl font-semibold">{item.title}</h2>
-            <p className="text-gray-500">{item.description}</p>
+            <h2 className="text-xl text-white  font-semibold">{item.title}</h2>
+            <p className="text-white">{item.description}</p>
           </div>
         ))}
       </div>

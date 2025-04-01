@@ -76,7 +76,7 @@ const Admin_blog = () => {
   
 
     try {
-      const response = await axios.post("https://education-server-gilt.vercel.app/blog", updatedFormData);
+      const response = await axios.post("http://localhost:5000/blog", updatedFormData);
    
       Swal.fire({
         title:"✅ Blog added successfully!",
@@ -96,11 +96,11 @@ const Admin_blog = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-5 bg-white shadow-lg rounded-lg">
-      <h2 className="text-2xl font-semibold text-center mb-5">Add New Blog</h2>
+    <div className="max-w-4xl mx-auto p-5  shadow-lg rounded-lg">
+      <h2 className="text-2xl text-teal-900 font-semibold text-center mb-5">Add New Blog</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block font-bold">Blog Title</label>
+          <label className="block text-yellow-500 font-bold">Blog Title</label>
           <input
             type="text"
             name="title"
@@ -113,7 +113,7 @@ const Admin_blog = () => {
 
         {/* Thumbnail Image */}
         <div className="mt-4">
-          <label className="block font-bold">Upload Thumbnail Image:</label>
+          <label className="block text-yellow-500 font-bold">Upload Thumbnail Image:</label>
           <input
             type="file"
             accept="image/*"
@@ -124,7 +124,7 @@ const Admin_blog = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block font-bold">Description</label>
+          <label className="block text-yellow-500 font-bold">Description</label>
           <textarea
             name="description"
             value={formData.description}
@@ -135,7 +135,7 @@ const Admin_blog = () => {
         </div>
 
         <div>
-          <label className="block font-bold">Details:</label>
+          <label className="block text-yellow-500 font-bold">Details:</label>
           <textarea
             name="details"
             value={formData.details}
@@ -146,7 +146,7 @@ const Admin_blog = () => {
         </div>
 
         <div>
-          <label className="block font-bold">Author:</label>
+          <label className="block text-yellow-500 font-bold">Author:</label>
           <input
             type="text"
             name="author"
@@ -158,7 +158,7 @@ const Admin_blog = () => {
         </div>
 
         <div>
-          <label className="block font-bold">Published Date:</label>
+          <label className="block text-yellow-500 font-bold">Published Date:</label>
           <input
             type="date"
             name="published_date"
@@ -171,7 +171,7 @@ const Admin_blog = () => {
 
         {/* Image 1 */}
         <div className="mt-4">
-          <label className="block font-bold">Upload Image 1:</label>
+          <label className="block text-yellow-500 font-bold">Upload Image 1:</label>
           <input
             type="file"
             accept="image/*"
@@ -183,7 +183,7 @@ const Admin_blog = () => {
 
         {/* Image 2 */}
         <div className="mt-4">
-          <label className="block font-bold">Upload Image 2:</label>
+          <label className="block text-yellow-500 font-bold">Upload Image 2:</label>
           <input
             type="file"
             accept="image/*"
@@ -195,7 +195,7 @@ const Admin_blog = () => {
 
         {/* Image 3 */}
         <div className="mt-4">
-          <label className="block font-bold">Upload Image 3:</label>
+          <label className="block text-yellow-500 font-bold">Upload Image 3:</label>
           <input
             type="file"
             accept="image/*"

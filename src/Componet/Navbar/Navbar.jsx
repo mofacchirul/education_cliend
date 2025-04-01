@@ -67,8 +67,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="sticky top-0 z-50 backdrop-blur-sm bg-white/90 shadow-md">
-      <div className="navbar sticky top-0 z-50 backdrop-blur-sm bg-white/90 shadow-md">
+    <div className="sticky top-0 z-50 backdrop-blur-sm  shadow-md">
+      <div className="navbar sticky top-0 z-50 backdrop-blur-sm  shadow-md">
         <div className="navbar-start">
           {/* Mobile Menu */}
           <div className="dropdown">
@@ -95,18 +95,18 @@ const Navbar = () => {
 
         {/* Logo for Mobile View */}
         <div className="lg:hidden">
-          <img src="https://i.ibb.co/LhhMkDfw/logo.png" alt="Logo" className="w-28" />
+          <img src="https://i.ibb.co/LhhMkDfw/logo.png" alt="Logo" className="lg:w-28 w-32  -ml-14" />
         </div>
 
         {/* Authentication Buttons */}
         <div className="navbar-end space-x-2">
           {user ? (
             <>
-              <button onClick={signOutUser} className="px-4 py-2 bg-amber-500 text-white rounded-tr-2xl rounded-bl-2xl hover:bg-teal-950">
+              <button onClick={signOutUser} className="lg:px-4 px-2 py-2 bg-amber-500 text-white rounded-tr-2xl rounded-bl-2xl hover:bg-teal-950 lg:text-xl text-sm">
                 Sign Out
               </button>
               <Link to="/applycation_from">
-                <button className="px-4 py-2 bg-teal-800 text-white rounded-tl-2xl rounded-br-2xl hover:bg-yellow-500">
+                <button className="lg:px-4 px-2 py-2 bg-teal-800 text-white rounded-tl-2xl rounded-br-2xl hover:bg-yellow-500 lg:text-xl text-sm">
                   Apply Now
                 </button>
               </Link>
@@ -114,12 +114,12 @@ const Navbar = () => {
           ) : (
             <>
               <Link to="/login">
-                <button className="px-4 py-2 bg-teal-800 text-white rounded-tr-2xl rounded-bl-2xl hover:bg-yellow-500">
+                <button className="lg:px-4 px-2 py-2 bg-teal-800 text-white rounded-tr-2xl rounded-bl-2xl hover:bg-yellow-500 lg:text-xl text-sm">
                   Login
                 </button>
               </Link>
               <Link to="/applycation_from">
-                <button className="px-4 py-2 bg-amber-500 text-white rounded-tl-2xl rounded-br-2xl hover:bg-teal-950">
+                <button className="lg:px-4 px-2 py-2 bg-yellow-500 text-white rounded-tl-2xl rounded-br-2xl hover:bg-teal-800 lg:text-xl text-sm">
                   Apply Now
                 </button>
               </Link>

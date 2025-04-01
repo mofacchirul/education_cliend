@@ -15,7 +15,7 @@ const Explores = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between gap-10 w-full max-w-6xl px-6">
         {/* Left Side - Form */}
         <div className="flex-1">
-          <div className="max-w-lg mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+          <div className="max-w-lg mt-3 lg:mt-0 mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
             {/* Header Section */}
             <div className="bg-teal-950 text-white p-6">
               <h2 className="text-2xl font-bold">Start Your Enrollment</h2>
@@ -65,7 +65,7 @@ const Explores = () => {
         </div>
 
         {/* Right Side - About Us Section */}
-        <div className="flex-1 text-center lg:text-left">
+        <div className="flex-1 mb-3 text-center lg:text-left">
           <h1 className="text-yellow-500 text-3xl font-bold border-b-2 border-yellow-500 flex items-center gap-2 justify-center lg:justify-start w-48 mx-auto lg:mx-0">
             <MdOutlineCastForEducation /> About Us
           </h1>

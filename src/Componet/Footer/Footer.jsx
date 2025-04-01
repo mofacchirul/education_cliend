@@ -9,47 +9,47 @@ const Footer = () => {
   <nav className="grid grid-cols-5 list-none items-center lg:grid-flow-col gap-4">
   <>
       <li>
-        <NavLink to="/" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/" >
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink to="/course" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/course" >
           Courses
         </NavLink>
       </li>
       <li>
-        <NavLink to="/academic" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/academic" >
           Academics
         </NavLink>
       </li>
       <li>
-        <NavLink to="/about" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/about" >
           About
         </NavLink>
       </li>
       <li>
-        <NavLink to="/admissions" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/admissions" >
           Admissions
         </NavLink>
       </li>
       <li>
-        <NavLink to="/my_applications" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/my_applications" >
           My Applications
         </NavLink>
       </li>
       <li>
-        <NavLink to="/blog_page" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/blog_page" >
           Blog
         </NavLink>
       </li>
       <li>
-        <NavLink to="/announcements" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/announcements" >
         Announcements
         </NavLink>
       </li>
       <li>
-        <NavLink to="/contact_page" className={({ isActive }) => (isActive ? "bg-teal-900 btn text-white" : "")}>
+        <NavLink to="/contact_page" >
           Contact
         </NavLink>
       </li>

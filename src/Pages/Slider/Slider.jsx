@@ -39,7 +39,7 @@ export default function Slider() {
   const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto overflow-hidden rounded-lg shadow-lg">
+    <div className="relative w-full  overflow-hidden rounded-lg shadow-lg">
       <AnimatePresence mode="wait">
         <motion.div
           key={slides[current].id}
@@ -76,14 +76,14 @@ export default function Slider() {
       {/* Navigation Buttons */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
         aria-label="Previous Slide"
       >
         <ChevronLeft size={24} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 text-black rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
         aria-label="Next Slide"
       >
         <ChevronRight size={24} />

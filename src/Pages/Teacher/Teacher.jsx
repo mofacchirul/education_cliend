@@ -7,35 +7,35 @@ const teamMembers = [
     name: "Angela T. Vigil",
     designation: "Associate Professor",
     image: "https://i.ibb.co.com/JwzFPdTd/01-1.jpg",
-    bgColor: "bg-gray-100",
+
   },
   {
     name: "Frank A. Mitchell",
     designation: "Associate Professor",
     image: "https://i.ibb.co.com/q3PYGg4p/02.jpg",
-    bgColor: "bg-orange-100",
+
   },
   {
     name: "Susan D. Lunsford",
     designation: "CEO & Founder",
     image: "https://i.ibb.co.com/vvdqMLQH/03.jpg",
-    bgColor: "bg-gray-200",
+
   },
   {
     name: "Dennis A. Pruitt",
     designation: "Associate Professor",
     image: "https://i.ibb.co.com/fVrRVPcV/04.jpg",
-    bgColor: "bg-orange-200",
+   
   }
 ];
 
 const TeamCard = ({ member }) => {
   return (
-   <div>
+   <div className="border rounded-4xl ">
 
     
 
-     <div className={`rounded-2xl p-4 shadow-lg ${member.bgColor} text-center`}> 
+     <div className={`rounded-2xl p-4 shadow-lg ${member.bgColor}  text-center`}> 
       <img
         src={member.image}
         alt={member.name}
@@ -50,8 +50,8 @@ const TeamCard = ({ member }) => {
 
 const TeamGrid = () => {
   return (
-   <div>
-     <div className='text-center w-1/2 mx-auto py-10'>
+   <div className="max-w-3xl lg:max-w-6xl mx-auto">
+     <div className='text-center  py-10'>
     <h1 className="text-yellow-500 mx-auto text-center lg:text-3xl font-bold border-b-2 border-yellow-500 flex items-center gap-2 w-36 lg:w-60">
       <MdOutlineCastForEducation /> Our Teachers
     </h1>
@@ -60,7 +60,7 @@ const TeamGrid = () => {
     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
     </p>
   </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
       {teamMembers.map((member, index) => (
         <TeamCard key={index} member={member} />
       ))}

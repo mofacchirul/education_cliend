@@ -9,17 +9,17 @@ const BlogDetails = () => {
     }
 
     return (
-        <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <div className="lg:max-w-4xl  mx-auto p-6 border shadow-lg rounded-lg mt-10">
             <img src={data.thumbnail} alt={data.title} className="w-full h-96 object-cover rounded-lg" />
 
             <h1 className="text-3xl font-bold mt-6">{data.title}</h1>
-            <p className="text-gray-500 mt-2">By {data.author} | {new Date(data.published_date).toDateString()}</p>
+            <p className="text-yellow-500 mt-2">By {data.author} | {new Date(data.published_date).toDateString()}</p>
 
-            <p className="mt-4 text-lg text-gray-700">{data.description}</p>
+            <p className="mt-4 text-lg text-gray-100">{data.description}</p>
 
             <div className="mt-6">
                 <h2 className="text-2xl font-semibold">Details</h2>
-                <p className="text-gray-600 mt-2">{data.details}</p>
+                <p className="text-gray-100 mt-2">{data.details}</p>
             </div>
 
             {/* Check if data.img exists and is an array */}
@@ -34,7 +34,7 @@ const BlogDetails = () => {
             </div>
 
             <Link to={'/applycation_from'}>
-                <button className='btn btn-block bg-yellow-500 text-white my-4 rounded-tr-2xl rounded-bl-2xl hover:bg-teal-700'>Apply Now</button>
+                <button className='btn btn-block bg-yellow-500 text-white my-4 rounded-tr-2xl rounded-bl-2xl hover:bg-teal-900'>Apply Now</button>
             </Link>
         </div>
     );

@@ -43,28 +43,28 @@ const Contack_page = () => {
                 
 
                 <div className='max-w-5xl  py-14 text-center mx-auto grid grid-cols-2 lg:grid-cols-4 gap-2.5'>
-                    <div className=' shadow-2xl bg-white p-2 rounded-tr-4xl rounded-bl-4xl'>
+                    <div className=' shadow-2xl border p-2 rounded-tr-4xl rounded-bl-4xl'>
                         <h1 className=' flex items-center justify-center p-4 mx-auto'>
                         <p className='   bg-teal-800  text-white w-20 h-20 flex items-center justify-center  rounded-full text-3xl' > <CiLocationOn /> </p>
                         </h1>
                         <h3 className='text-xl font-semibold'>Office Address</h3>
                         <p>25/B Milford, New York, USA</p>
                     </div>
-                    <div className=' shadow-2xl bg-white p-2 rounded-tr-4xl rounded-bl-4xl'>
+                    <div className=' shadow-2xl border p-2 rounded-tr-4xl rounded-bl-4xl'>
                         <h1 className=' flex items-center justify-center p-4 mx-auto'>
                         <p className='   bg-teal-800  text-white w-20 h-20 flex items-center justify-center  rounded-full text-3xl' > <IoCall /> </p>
                         </h1>
                         <h3 className='text-xl font-semibold'>Call Us</h3>
                         <p>+2 123 4565 789</p>
                     </div>
-                    <div className=' shadow-2xl bg-white p-2 rounded-tr-4xl rounded-bl-4xl'>
+                    <div className=' shadow-2xl border p-2 rounded-tr-4xl rounded-bl-4xl'>
                         <h1 className=' flex items-center justify-center p-4 mx-auto'>
                         <p className='   bg-teal-800  text-white w-20 h-20 flex items-center justify-center  rounded-full text-3xl' > <MdEmail  /> </p>
                         </h1>
                         <h3 className='text-xl font-semibold'>Email Us</h3>
                         <p>info@example.com</p>
                     </div>
-                    <div className=' shadow-2xl bg-white p-2 rounded-tr-4xl rounded-bl-4xl'>
+                    <div className=' shadow-2xl border p-2 rounded-tr-4xl rounded-bl-4xl'>
                         <h1 className=' flex items-center justify-center p-4 mx-auto'>
                         <p className='   bg-teal-800  text-white w-20 h-20 flex items-center justify-center  rounded-full text-3xl' > <CiClock2  /> </p>
                         </h1>
@@ -78,7 +78,7 @@ const Contack_page = () => {
 
 
                 <div className="flex max-w-5xl mx-auto flex-wrap items-center justify-center min-h-screen ">
-      <div className="bg-white lg:flex rounded-lg shadow-lg p-8 max-w-4xl  w-full">
+      <div className=" lg:flex rounded-lg shadow-lg p-8 max-w-4xl  w-full">
         {/* Left Image Section */}
         <div className="w-1/2 mx-auto">
           <img
@@ -90,8 +90,8 @@ const Contack_page = () => {
 
         {/* Right Form Section */}
         <div className="w-full md:w-1/2 p-6">
-          <h2 className="text-2xl font-bold text-gray-800">Get In Touch</h2>
-          <p className="text-gray-600 mb-6">
+          <h2 className="text-2xl font-bold text-white">Get In Touch</h2>
+          <p className="text-gray-100 mb-6">
             It is a long established fact that a reader will be distracted by
             the readable content of a page.
           </p>

@@ -126,7 +126,7 @@ const Academini = () => {
                     </div> */}
                      <div className="mb-6">
         <h3 className="text-xl font-semibold mb-3 text-teal-500 pt-7">📚 Departments</h3>
-        <ul className="list-disc pl-5 text-gray-700">
+        <ul className="list-disc pl-5 text-gray-100">
           {courses.map((course) => (
             <li key={course.id}  className='list-none flex items-center gap-2 text-2xl'> <span className='text-yellow-500'> <FaArrowRight /></span> {course.name}</li>
           ))}
@@ -182,7 +182,7 @@ const Academini = () => {
                 <div className="max-w-4xl mx-auto p-6">
                 <div className="mb-6">
         <h3 className="text-2xl font-semibold mb-3">📌 Notices & Announcements</h3>
-        <ul className="list-disc pl-5 text-gray-700">
+        <ul className="list-disc pl-5 text-gray-100">
           {notices.map((notice, index) => (
             <li key={index} className="mb-2">{notice}</li>
           ))}
@@ -197,15 +197,15 @@ const Academini = () => {
       {/* Faculty Members */}
       <div className="pt-10">
         <h3 className="text-2xl font-semibold mb-3 text-teal-500 pt-16 ">👨‍🏫 Faculty Members</h3>
-        <ul className="space-y-3 grid lg:grid-cols-2 gap-2.5">
+        <ul className="space-y-3 grid items-center w-96 mx-auto lg:w-full lg:grid-cols-2 gap-2.5">
           {faculty.map((teacher, index) => (
-            <div className='bg-gray-100 rounded-lg p-2 shadow'>
-                <li key={index} className="p-4 ">
-              <p className="font-bold">{teacher.name}</p>
-              <p>{teacher.subject}</p>
-              <p className="text-blue-500">{teacher.email}</p>
+            <div className=' border rounded-lg p-2 shadow'>
+                <li key={index} className="p-4 text-center ">
+              <p className="font-bold"> teacher Name :  {teacher.name}</p>
+              <p> teacher Subject : {teacher.subject}</p>
+              <p className="text-yellow-500">Teacher Email : {teacher.email}</p>
             </li>
-            <img src={teacher.img} className='h-96 w-full rounded-3xl'  alt="" />
+            <img src={teacher.img} className='h-96 lg:w-full mx-auto rounded-3xl'  alt="" />
             </div>
           ))}
         </ul>

@@ -132,12 +132,12 @@ const CoursePost = () => {
   
 
   return (
-    <div className='max-w-4xl mx-auto p-5 bg-white shadow-lg rounded-lg'>
-      <h2 className="text-2xl font-semibold text-center mb-5">Add New Course</h2>
+    <div className='max-w-4xl mx-auto p-5  shadow-lg rounded-lg'>
+      <h2 className="text-2xl font-semibold text-teal-900 text-center mb-5">Add New Course</h2>
       <form onSubmit={handleSubmit} className=" ">
         {/* Title */}
         <div className="mb-4">
-          <label className="block text-gray-700">Course Title</label>
+          <label className="block text-yellow-500">Course Title</label>
           <input
             type="text"
             name="title"
@@ -150,7 +150,7 @@ const CoursePost = () => {
 
         {/* Thumbnail Image */}
         <div className="mt-4">
-          <label className="block font-bold">Upload Thumbnail Image:</label>
+          <label className="block text-yellow-500 font-bold">Upload Thumbnail Image:</label>
           <input
             type="file"
             accept="image/*"
@@ -169,7 +169,7 @@ const CoursePost = () => {
 
         {/* Description */}
         <div className="mb-4">
-          <label className="block text-gray-700">Description</label>
+          <label className="block text-yellow-500">Description</label>
           <textarea
             name="description"
             value={formData.description}
@@ -180,7 +180,7 @@ const CoursePost = () => {
         </div>
  {/* Power of Choice */}
         <div className="mb-4">
-          <label className="block text-gray-700">Power of Choice</label>
+          <label className="block text-yellow-500">Power of Choice</label>
           <textarea
             name="power_of_choice"
             value={formData.power_of_choice}
@@ -192,7 +192,7 @@ const CoursePost = () => {
 
         {/* Course Requirements */}
         <div className="mb-4">
-          <label className="block text-gray-700">Course Requirements</label>
+          <label className="block text-yellow-500">Course Requirements</label>
           {formData.course_requirement.map((requirement, index) => (
             <input
               key={index}
@@ -207,7 +207,7 @@ const CoursePost = () => {
 
         {/* Professional Experience */}
         <div className="mb-4">
-          <label className="block text-gray-700">Professional Experience</label>
+          <label className="block text-yellow-500">Professional Experience</label>
           <textarea
             name="professional_experience"
             value={formData.professional_experience}
@@ -221,7 +221,7 @@ const CoursePost = () => {
 
         {/* Image 1 */}
         <div className="mt-4">
-          <label className="block font-bold">Upload Image 1:</label>
+          <label className="block text-yellow-500 font-bold">Upload Image 1:</label>
           <input
             type="file"
             accept="image/*"
@@ -239,7 +239,7 @@ const CoursePost = () => {
 
         {/* Image 2 */}
         <div className="mt-4">
-          <label className="block font-bold">Upload Image 2:</label>
+          <label className="block text-yellow-500 font-bold">Upload Image 2:</label>
           <input
             type="file"
             accept="image/*"

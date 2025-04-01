@@ -2,9 +2,16 @@ import React from 'react';
 import My_ApplicationsTanstack from './My_ApplicationsTanstack/My_ApplicationsTanstack';
 import Swal from 'sweetalert2';
 import SecureAxios from '../../Axios/SecureAxios/SecureAxios';
+import Loading from '../../Loding';
 
 const My_applicatons = () => {
-    const [apply,refetch]=My_ApplicationsTanstack()
+    const [apply,refetch,loading]=My_ApplicationsTanstack()
+    if (loading) {
+        return <Loading></Loading>;
+    }
+    if (!Array.isArray(apply) || apply.length === 0) {
+        return <p className="text-center text-red-500">No courses found.</p>;
+      }
 const axios=SecureAxios()
     const Handledelet=(id)=>{
         Swal.fire({

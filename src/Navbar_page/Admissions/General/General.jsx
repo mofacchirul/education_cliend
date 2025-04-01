@@ -15,7 +15,7 @@ const General = () => {
               General <span className="text-yellow-500">frequently </span> asked
               questions.
             </h1>
-            <p className="text-gray-600 ">
+            <p className="text-gray-100 ">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which don't look even.
@@ -29,7 +29,7 @@ const General = () => {
             </p>
           </div>
 
-          <button className="px-4 py-2 mt-4 hover:bg-teal-700 bg-yellow-500 text-white rounded-tl-2xl rounded-br-2xl">
+          <button className="px-4 py-2 mt-4 hover:bg-teal-900 bg-yellow-500 text-white rounded-tl-2xl rounded-br-2xl">
             HAVE ANY QUESTIONS{" "}
           </button>
         </div>
