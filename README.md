@@ -1,12 +1,39 @@
-# React + Vite
+Educational Website
+"Education made simple. Our platform offers everything students need to enroll, learn, and track their progress, ensuring a seamless experience for both students and administrators."
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📌 Live Demo
+🔗 Visit Website: ** [Educational Website](https://educations-fb2da.web.app/)  
 
-Currently, two official plugins are available:
+📖 Overview
+This Educational Website is a comprehensive platform designed to enhance the learning experience for students and streamline administrative processes. It allows students to explore courses, register, track progress, and stay updated with academic announcements, while administrators can easily manage courses, admissions, and students.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛒 Educational Website Features
+✅ User Authentication – Register and log in effortlessly using Google authentication for quick access.
 
-## Expanding the ESLint configuration
+✅ Course Listings – View detailed information about courses, including course duration, syllabus, fees, and instructor details.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Course Enrollment – Students can easily apply for courses directly from the website.
+
+✅ Responsive Design – Optimized to work seamlessly across all devices, ensuring a smooth and consistent experience on both mobile and desktop.
+
+✅ Interactive Animations – Improve user engagement with Framer Motion and Lottie Animations for dynamic and visually appealing interactions.
+
+✅ Real-time Updates – Instantly update the UI to reflect changes in course availability, admission announcements, and student status, keeping everything current without refreshing.
+
+✅ Blogs & Articles – Access educational blogs and articles that help students broaden their knowledge.
+
+🖥️ Tech Stack
+🔹 Frontend:
+⚛️ React.js
+
+🎨 Tailwind CSS & DaisyUI
+
+🌐 React Router DOM
+
+🔹 Backend & Database:
+🔥 Firebase Authentication & Firestore Database
+
+🔹 Third-Party Services:
+📦 Axios (for API requests)
+
+🍭 SweetAlert2 (for alerts and confirmations)
