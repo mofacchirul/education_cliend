@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { FaEye, FaRegEyeSlash } from 'react-icons/fa6';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logins from '../../Lottie/login.json'
 import Lottie from 'lottie-react';
 import { AuthContext } from '../Provider/Auth';
@@ -13,7 +13,10 @@ import SecureAxios from '../../Axios/SecureAxios/SecureAxios';
 const Login = () => {
     const [view,setview]=useState(true);
     const {login}=useContext(AuthContext)
-    const navigate=useNavigate()
+    const location = useLocation();
+    const navigate = useNavigate();
+    
+    const from = location.state || '/';
     const axios = SecureAxios()
     const HandleLogin = (e) => {
      
@@ -35,7 +38,7 @@ const Login = () => {
             email:result.user.email
           }
           axios.post('/user',user)
-          navigate('/')
+          navigate(from)
       })
       .catch(error => {
           Swal.fire({

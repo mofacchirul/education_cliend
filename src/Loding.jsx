@@ -20,7 +20,7 @@ const Loading = () => {
                 }
                 
                 setOpacity(currentOpacity);
-            }, 40);
+            }, 20);
             
             return () => clearInterval(animationInterval);
         };

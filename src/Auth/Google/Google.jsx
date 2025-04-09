@@ -7,7 +7,7 @@ import SecureAxios from '../../Axios/SecureAxios/SecureAxios';
 const Google = () => {
     const { googleSignIn } = useContext(AuthContext);
     const axios = SecureAxios();
-    const navigate = useNavigate(); // ✅ এখানেই useNavigate কল করতে হবে
+    const navigate = useNavigate(); 
 
     const HandleGoole = () => {
         googleSignIn()
@@ -25,7 +25,7 @@ const Google = () => {
                                 draggable: true
                             });
                         }
-                        navigate('/'); // ✅ এখন এটা ঠিকমতো কাজ করবে
+                        navigate('/');
                     });
             });
     };

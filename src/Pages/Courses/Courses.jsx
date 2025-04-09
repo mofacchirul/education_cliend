@@ -2,14 +2,15 @@ import { MdOutlineCastForEducation } from 'react-icons/md';
 import Coursestan from './Coursestan/Coursestan';
 import { Star, Users, Clock } from "lucide-react";
 import { Link } from 'react-router-dom';
+import Loading from '../../Loding';
 
 const Courses = () => {
   const [course, loading] = Coursestan();
-  console.log(course);
+
   
 
   if (loading) {
-    return <span className="loading loading-bars loading-xl"></span>;
+    return <Loading></Loading>;
 }
 
   if (!Array.isArray(course) || course.length === 0) {

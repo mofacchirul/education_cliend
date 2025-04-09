@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import singups from "../../Lottie/singup.json";
 import { FaEye, FaRegEyeSlash } from "react-icons/fa6";
 import { AuthContext } from "../Provider/Auth";
@@ -15,7 +15,10 @@ const SignupForm = () => {
   const { singup } = useContext(AuthContext);
 const axios= SecureAxios();
 
-const navigat= useNavigate()
+const location = useLocation();
+const navigate = useNavigate();
+
+const from = location.state || '/';
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -60,7 +63,7 @@ const navigat= useNavigate()
           icon: "success",
           draggable: true,
         });
-        navigat('/')
+        navigate(from)
 
       })
    

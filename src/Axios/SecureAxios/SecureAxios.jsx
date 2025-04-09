@@ -4,9 +4,10 @@ import { AuthContext } from "../../Auth/Provider/Auth"; // ✅ Ensure Correct Im
 import { useCallback, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 // Create Secure Axios Instance
 const secureAxios = axios.create({
-    baseURL: "http://localhost:5000",
+    baseURL: "https://education-server-gilt.vercel.app",
     withCredentials: true,
 });
 

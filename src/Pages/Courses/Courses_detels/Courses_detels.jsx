@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const CourseDetails = () => {
     const data = useLoaderData();
-    console.log(data);
+
     
 
     return (

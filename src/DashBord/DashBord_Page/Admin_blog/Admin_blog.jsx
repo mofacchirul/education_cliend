@@ -76,7 +76,7 @@ const Admin_blog = () => {
   
 
     try {
-      const response = await axios.post("http://localhost:5000/blog", updatedFormData);
+      const response = await axios.post("https://education-server-gilt.vercel.app/blog", updatedFormData);
    
       Swal.fire({
         title:"✅ Blog added successfully!",
