@@ -2,7 +2,7 @@ Educational Website
 "Education made simple. Our platform offers everything students need to enroll, learn, and track their progress, ensuring a seamless experience for both students and administrators."
 
 📌 Live Demo
-🔗 Visit Website: ** [Educational Website](https://educations-fb2da.web.app/)  
+🔗 Visit Website: ** [Educational Website](https://educations-fb2da.web.app)  
 
 📖 Overview
 This Educational Website is a comprehensive platform designed to enhance the learning experience for students and streamline administrative processes. It allows students to explore courses, register, track progress, and stay updated with academic announcements, while administrators can easily manage courses, admissions, and students.
